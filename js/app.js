@@ -332,6 +332,3 @@ function calculateSize() {
     document.getElementById("paylessOutput").innerHTML="Payless: " + payless;
 } //end main
 
-const button = document.querySelector("button");
-
-button.addEventListener("click", calculateSize);

@@ -51,7 +51,7 @@
 
 
             <!-- This starts the INPUT-FORM section -->
-        <div class="container my-calc-container">
+        <div class="container">
 
             <div class="row justify-content-center">
                 <div class="col-md-6">
@@ -60,7 +60,7 @@
             </div> 
             <div class="row">
                 <div class="col">
-                    <button class="btn btn-primary btn-md">Find Sizes</button>
+                    <button class="btn btn-primary btn-md" onclick="calculateSize()">Find Sizes</button>
                 </div>
             </div> <!-- calculator input section -->       
 
@@ -188,7 +188,7 @@
                 </div>
                 <div class="col">
                     <form class="form-contact" name="contact" method="POST" action="thanks.html" netlify>
-                        <p>We welcome any feedback. Let us know if there are any brands you'd like us to add.</p>
+                        <p>Let us know if there are any brands you'd like us to add.</p>
                         <p>
                             <label for="inputEmail" class="sr-only">Email address</label>
                             <input class="form-control form-control-lg" type="email" id="inputEmail" name="name" placeholder="Email Address" required>
