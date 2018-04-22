@@ -105,8 +105,12 @@ h1, h2, h3, #content, #included_brands {
 	margin-top: 100px;
 }
 
-#how_it_works, #sizing_information {
-	padding-top: 3%;
+#how_it_works, #included_brands, #sizing_information {
+	padding-top: 40px;
+}
+
+.my-calc-container {
+	margin-bottom: 50%;
 }
 
 @viewport {
