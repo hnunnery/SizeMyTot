@@ -35,6 +35,10 @@ hr {
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
+.card-body a {
+	color: white;
+}
+
 .container, .container-fluid {
 	text-align: center;
 }
