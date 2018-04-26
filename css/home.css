@@ -10,36 +10,41 @@ body {
 h1 {
 	font-size: 3.5em;
 	font-weight: bold;
-	color: white;
 	white-space: nowrap;
 }
 
 h2 {
 	font-size: 2.3em;
 	font-weight: bold;
-	color: black;
 	white-space: nowrap;
+	padding-bottom: 20px;
 }
 
 h3 {
 	font-size: 1.3em;
 	padding-top: 2%;
-	color: white;
 	white-space: nowrap;
 }
 
 hr {
-	color: white;
 	width: 250px;
 	border-top: 1px solid #f8f8f8;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-.card-body a {
+h1, h3, hr, .card-body a {
 	color: white;
 }
 
-.container, .container-fluid {
+h1, h2, h3, #content, #included_brands {
+	font-family: Indie Flower, sans-serif;
+	padding-top: 4%;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.container, .container-fluid, #formInput{
 	text-align: center;
 }
 
@@ -73,36 +78,18 @@ hr {
 }
 
 .card {
-	font-size: 1.2em;
+	font-size: 1.75em;
 	white-space: nowrap;
 }
-
-
-/*from bootstrap forms*/
 
 .form-contact {
   width: 100%;
   max-width: 500px;
   padding: 15px;
   margin: 0 auto;
-  font-weight: 400;
-}
-
-.form-contact {
+	font-weight: 400;
 	margin-top: 2%;
 	margin-bottom: 5%;
-}
-
-#formInput {
-    text-align: center;
-}
-
-h1, h2, h3, #content, #included_brands {
-	font-family: Indie Flower, sans-serif;
-	padding-top: 4%;
-	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-				 0px 8px 13px rgba(0,0,0,0.1),
-				 0px 18px 23px rgba(0,0,0,0.1);
 }
 
 #how_it_works, #included_brands, #sizing_information, #contact_us {
@@ -110,7 +97,7 @@ h1, h2, h3, #content, #included_brands {
 }
 
 #how_it_works, #included_brands, #sizing_information {
-	padding-top: 40px;
+	padding-top: 45px;
 }
 
 .my-calc-container {
@@ -148,6 +135,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 	.card {
 		font-size: 2em;
+		max-width: 22rem;
 	}
 }
  
@@ -199,6 +187,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 	.card {
 		font-size: 2em;
 	}
+
+	.my-nav-container a {
+		font-size: 1.25em;
+	}
 }
  
 /* Extra large devices (large desktops, 1200px and up) */
@@ -221,5 +213,9 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 	.card {
 		font-size: 2.7em;
+	}
+
+	.my-nav-container a {
+		font-size: 1.5em;
 	}
 }
