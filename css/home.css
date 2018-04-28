@@ -71,6 +71,10 @@ h1, h2, h3, #content, #included_brands {
 	background-color: white;
 }
 
+.navbar-brand {
+	max-width: 125px;
+}
+
 .my-nav-container {
 	font-family: Indie Flower, sans-serif;
 	font-weight: bold;
@@ -210,6 +214,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 	hr {
 		width: 550px;
 	}
+
+	.navbar-brand {
+	max-width: 150px;
+}
 
 	.card {
 		font-size: 2.7em;
