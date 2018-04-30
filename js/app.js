@@ -11,6 +11,12 @@ let footLength;
 let button = document.querySelector("#calculateBtn");
 button.addEventListener("click", calculateSizes);
 
+document.getElementById("formInput").onkeydown = () => {
+    if (event.keyCode === 13) {
+        calculateSizes();
+    }
+};
+
 function calculateSizes() {
     footLength = document.getElementById("formInput").value;
     pedipedCalculator();

@@ -3,8 +3,8 @@ html {
 }
 
 body {
-	padding-top: 50px;
-	margin-bottom: 20px;
+	/* padding-top: 50px; */
+	margin-bottom: 100px;
 }
 
 h1 {
@@ -38,7 +38,7 @@ h1, h3, hr, .card-body a {
 
 h1, h2, h3, #content, #included_brands {
 	font-family: Indie Flower, sans-serif;
-	padding-top: 4%;
+	padding-top: 10px;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
 				 0px 8px 13px rgba(0,0,0,0.1),
 				 0px 18px 23px rgba(0,0,0,0.1);
@@ -49,7 +49,7 @@ h1, h2, h3, #content, #included_brands {
 }
 
 .jumbotron {
-	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://res.cloudinary.com/missionwebdev/image/upload/f_auto,q_auto/v1524530080/shoes.jpg");
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://res.cloudinary.com/missionwebdev/image/upload/f_auto,q_auto:good/v1525058490/shoes2.jpg");
 	background-size: 100%;
 	background-position: center;
 }
@@ -72,13 +72,20 @@ h1, h2, h3, #content, #included_brands {
 }
 
 .navbar-brand {
-	max-width: 125px;
+	max-width: 100px;
 }
 
 .my-nav-container {
+	width: 90%;
 	font-family: Indie Flower, sans-serif;
 	font-weight: bold;
 	white-space: nowrap;
+	font-size: 1.5em;
+	line-height: 1;
+}
+
+.nav-item {
+	padding-bottom: .2rem;
 }
 
 .card {
@@ -96,16 +103,17 @@ h1, h2, h3, #content, #included_brands {
 	margin-bottom: 5%;
 }
 
-#how_it_works, #included_brands, #sizing_information, #contact_us {
-	margin-top: 100px;
+.my-calc-container {
+	min-height: 30em;
 }
 
-#how_it_works, #included_brands, #sizing_information {
+#jumbotron {
+	padding: 0 0;
 	padding-top: 50px;
 }
 
-.my-calc-container {
-	margin-bottom: 50%;
+#how_it_works, #included_brands, #contact_us {
+	padding-top: 55px; /*keeps headers from being covered by navbar*/
 }
 
 @viewport {
