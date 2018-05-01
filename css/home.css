@@ -3,15 +3,7 @@ html {
 }
 
 body {
-	margin-bottom: 180px;
-	/* remove the below if reverting to white background */
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://res.cloudinary.com/missionwebdev/image/upload/f_auto/v1525142980/shoe_pile_compressed.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
-	background-size: cover;
-	color: white; 
+	margin-bottom: 250px;
 }
 
 h1 {
@@ -43,7 +35,7 @@ h1, h3, hr, .card-body a {
 	color: white;
 }
 
-h1, h2, h3, #content, #included_brands {
+h1, h2, h3, h4, .steps, #content, #included_brands {
 	font-family: Indie Flower, sans-serif;
 	padding-top: 10px;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
@@ -125,15 +117,14 @@ h1, h2, h3, #content, #included_brands {
 }
 
 #content {
-	padding-top: 5em;
-	padding-bottom: 25px;
+	padding-top: 25%;
+	padding-bottom: 30px;
 }
 
 #calculator {
-	/* activate the below if reverting to white background */
-	/* background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://res.cloudinary.com/missionwebdev/image/upload/f_auto/v1525142980/shoe_pile_compressed.jpg");
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://res.cloudinary.com/missionwebdev/image/upload/f_auto/v1525142980/shoe_pile_compressed.jpg");
 	background-size: 100%;
-	background-position: center; */
+	background-position: center;
 }
 
 #how_it_works, #included_brands, #contact_us {
@@ -146,6 +137,15 @@ h1, h2, h3, #content, #included_brands {
 
 #how_it_works h2 {
 	padding-bottom: 1em;
+}
+
+h4 {
+	padding-top: 2em;
+}
+
+h4, .steps {
+	font-weight: bold;
+	white-space: nowrap;
 }
 
 #included_brands {
@@ -173,8 +173,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 		font-size: 3.3em;
 	}
 
-	h3, .output-row {
+	h3, .steps, .output-row {
 		font-size: 1.5em;
+	}
+
+	h4 {
+		font-size: 2.35em;
 	}
 
 	hr {
@@ -197,8 +201,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 		font-size: 4em;
 	}
 
-	h3 {
+	h3, .steps {
 		font-size: 2em;
+	}
+
+	h4 {
+		font-size: 3em;
 	}
 
 	hr {
@@ -228,8 +236,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 		font-size: 5em;
 	}
 
-	h3 {
+	h3, .steps {
 		font-size: 2.5em;
+	}
+
+	h4 {
+		font-size: 3.75em;
 	}
 
 	hr {
@@ -259,8 +271,12 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 		font-size: 6em;
 	}
 
-	h3 {
+	h3, .steps {
 		font-size: 3em;
+	}
+
+	h4 {
+		font-size: 4.5em;
 	}
 
 	hr {
