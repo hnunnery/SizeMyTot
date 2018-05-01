@@ -19,7 +19,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/home.css">
         <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     </head>
     <body>
         
@@ -27,13 +26,13 @@
 
             <div class="container-fluid my-nav-container">
 
-                <a href="#jumbotron"><img class="navbar-brand" src="https://res.cloudinary.com/missionwebdev/image/upload/c_scale,f_auto,h_105,q_auto/v1524891189/SizeMyTot.png"></a>
+                <a href="#calculator"><img class="navbar-brand" src="https://res.cloudinary.com/missionwebdev/image/upload/c_scale,f_auto,h_105,q_auto/v1524891189/SizeMyTot.png"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav nav-fill w-100">
-                        <a class="nav-item nav-link active" href="#jumbotron">Calculator</a>
+                        <a class="nav-item nav-link active" href="#calculator">Calculator</a>
                         <a class="nav-item nav-link active" href="#how_it_works">How It Works</a>
                         <a class="nav-item nav-link active" href="#included_brands">Included Brands</a>
                         <a class="nav-item nav-link active" href="#contact_us">Contact Us</a>
@@ -44,10 +43,9 @@
         </nav>
 
 
-        <div class="jumbotron" id="jumbotron">
+        <div id="calculator">
 
             <div class="container my-jumbotron-container">
-            
                 <div class="row">
                     <div class="col col-lg-12" id="content">
                         <h1><span id="size">Size My Tot</h1>
@@ -55,47 +53,46 @@
                         <hr>
                     </div>
                 </div>
-
             </div> <!-- end jumbotron container -->
-        </div> <!-- end jumbotron -->
+            
 
 
-            <!-- This starts the INPUT-FORM section -->
-        <div class="container my-calc-container">
+                <!-- This starts the INPUT-FORM section -->
+            <div class="container my-calc-container">
 
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <label for="formInput" class="sr-only">Foot Length in Inches</label>
-                    <input class="form-control form-control-lg" type="float" id="formInput" placeholder="Foot Length in Inches (ex: 5.25)"></input>
-                </div>
-            </div> 
-            <div class="row">
-                <div class="col">
-                    <button id="calculateBtn" type="submit" class="btn btn-primary btn-md">Find Sizes</button>
-                </div>
-            </div> <!-- calculator input section -->       
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <label for="formInput" class="sr-only">Foot Length in Inches</label>
+                        <input class="form-control form-control-lg" type="float" id="formInput" placeholder="Foot Length in Inches (ex: 5.25)"></input>
+                    </div>
+                </div> 
+                <div class="row">
+                    <div class="col">
+                        <button id="calculateBtn" type="submit" class="btn btn-primary btn-md">Find Sizes</button>
+                    </div>
+                </div> <!-- calculator input section -->       
 
 
-            <!-- This starts the calculator OUTPUT-ROW section -->
-            <div class="row output-row">
-                <div class="col-lg-4">
-                    <p id="pedipedOutput"></p>
-                    <p id="strideRiteOutput"></p>
-                    <p id="miniMelissaOutput"></p>
-                </div>
-                <div class="col-lg-4">
-                    <p id="vansOutput"></p>
-                    <p id="freshlyPickedSoftSolesOutput"></p>
-                    <p id="freshlyPickedSandalsOutput"></p>
-                </div>
-                <div class="col-lg-4">
-                    <p id="converseOutput"></p>
-                    <p id="seeKaiRunOutput"></p>
-                    <p id="paylessOutput"></p>
-                </div>
-            </div> <!-- ends output-row -->
-        </div> <!-- ends container -->
-
+                <!-- This starts the calculator OUTPUT-ROW section -->
+                <div class="row output-row">
+                    <div class="col-lg-4">
+                        <p id="pedipedOutput"></p>
+                        <p id="strideRiteOutput"></p>
+                        <p id="miniMelissaOutput"></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p id="vansOutput"></p>
+                        <p id="freshlyPickedSoftSolesOutput"></p>
+                        <p id="freshlyPickedSandalsOutput"></p>
+                    </div>
+                    <div class="col-lg-4">
+                        <p id="converseOutput"></p>
+                        <p id="seeKaiRunOutput"></p>
+                        <p id="paylessOutput"></p>
+                    </div>
+                </div> <!-- ends output-row -->
+            </div> <!-- ends my-calc-container -->
+        </div> <!-- ends calculator container-->
 
             <!-- This starts the HOW IT WORKS section -->
         <div class="container-fluid" id="how_it_works">
@@ -103,7 +100,9 @@
             <div class="row justify-content-center">
                 <div class="col-xs-12">
                     <h2>How It Works</h2>
-                    <p>COMING SOON</p>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/9ByC0GeNVrw" frameborder="0" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div> <!-- end how it works section -->
