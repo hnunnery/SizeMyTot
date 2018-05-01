@@ -56,7 +56,6 @@ h1, h2, h3, h4, .steps, #content, #included_brands {
 .output-row {
 	margin-top: 3%;
 	font-weight: bold;
-	color: white;
 	white-space: nowrap;
 }
 
@@ -96,7 +95,7 @@ h1, h2, h3, h4, .steps, #content, #included_brands {
 	margin-bottom: 5%;
 }
 
-.my-calc-container {
+.output-brands {
 	min-height: 50em;
 }
 
@@ -117,14 +116,16 @@ h1, h2, h3, h4, .steps, #content, #included_brands {
 }
 
 #content {
-	padding-top: 25%;
+	padding-top: 150px;
 	padding-bottom: 30px;
 }
 
 #calculator {
 	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://res.cloudinary.com/missionwebdev/image/upload/f_auto/v1525142980/shoe_pile_compressed.jpg");
-	background-size: 100%;
+	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
+	padding-bottom: 50px;
 }
 
 #how_it_works, #included_brands, #contact_us {
