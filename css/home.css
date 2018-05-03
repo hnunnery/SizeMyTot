@@ -56,6 +56,7 @@ h1, h2, h3, h4, .steps, #content, #included_brands {
 .output-row {
 	margin-top: 3%;
 	font-weight: bold;
+	color: white;
 	white-space: nowrap;
 }
 
@@ -95,7 +96,7 @@ h1, h2, h3, h4, .steps, #content, #included_brands {
 	margin-bottom: 5%;
 }
 
-.output-brands {
+.my-calc-container {
 	min-height: 50em;
 }
 
@@ -116,16 +117,15 @@ h1, h2, h3, h4, .steps, #content, #included_brands {
 }
 
 #content {
-	padding-top: 150px;
+	padding-top: 10em;
 	padding-bottom: 30px;
 }
 
 #calculator {
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("https://res.cloudinary.com/missionwebdev/image/upload/f_auto/v1525142980/shoe_pile_compressed.jpg");
+	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("https://res.cloudinary.com/missionwebdev/image/upload/f_auto/v1525142980/shoe_pile_compressed.jpg");
+	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	background-repeat: no-repeat;
-	padding-bottom: 50px;
 }
 
 #how_it_works, #included_brands, #contact_us {
@@ -225,6 +225,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 	.output-row {
 		font-size: 1.25em;
 	}
+
+	#content {
+	padding-top: 15em;
+	}
 }
  
 /* Large devices (desktops, 992px and up) */
@@ -259,6 +263,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 	.my-nav-container a {
 		font-size: 1.25em;
+	}
+
+	#content {
+	padding-top: 20em;
 	}
 }
  
