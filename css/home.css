@@ -1,9 +1,10 @@
 html {
 	height: 100%;
+	box-sizing: border-box;
 }
 
 body {
-	margin-bottom: 250px;
+	margin-bottom: 50%;
 }
 
 h1 {
@@ -31,11 +32,11 @@ hr {
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 }
 
-h1, h3, hr, .card-body a {
+h1, h3, hr, .items a {
 	color: white;
 }
 
-h1, h2, h3, h4, .steps, #content, #included_brands {
+h1, h2, h3, h4, .steps, #content, #included_brands a {
 	font-family: Indie Flower, sans-serif;
 	padding-top: 10px;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
@@ -43,7 +44,7 @@ h1, h2, h3, h4, .steps, #content, #included_brands {
 				 0px 18px 23px rgba(0,0,0,0.1);
 }
 
-.container, .container-fluid, #formInput{
+.wrapper, .container, .container-fluid, #formInput{
 	text-align: center;
 }
 
@@ -77,13 +78,9 @@ h1, h2, h3, h4, .steps, #content, #included_brands {
 	line-height: 1;
 }
 
+/* lines nav items up with logo */
 .nav-item {
 	padding-bottom: .2rem;
-}
-
-.card {
-	font-size: 1.75em;
-	white-space: nowrap;
 }
 
 .form-contact {
@@ -108,12 +105,29 @@ h1, h2, h3, h4, .steps, #content, #included_brands {
 	overflow: hidden;
 }
 
-.video-container iframe {
+.video-container iframe, .video-container object, .video-container embed {
 	position: absolute;
 	top: 0;
-	left: 0;
-	width: 100%;
+	left: 5vw;
+	width: 90vw;
 	height: 100%;
+}
+
+.brands {
+	padding-left: 1%;
+	padding-right: 1%;
+  display: grid;
+  grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+	justify-content: center;
+}
+		
+.items {	
+	background-color: rgb(97, 14, 175);
+	font-size: 2em;
+	max-width: 22rem;
+	white-space: nowrap;
+	border-radius: 5px;
 }
 
 #content {
@@ -129,7 +143,7 @@ h1, h2, h3, h4, .steps, #content, #included_brands {
 }
 
 #how_it_works, #included_brands, #contact_us {
-	padding-top: 5em; /*keeps headers from being covered by navbar*/
+	padding-top: 3.5em; /*keeps headers from being covered by navbar*/
 }
 
 #how_it_works {
@@ -185,11 +199,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 	hr {
 		width: 275px;
 	}
-
-	.card {
-		font-size: 2em;
-		max-width: 22rem;
-	}
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -212,10 +221,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 	hr {
 		width: 400px;
-	}
-
-	.card {
-		font-size: 2em;
 	}
 
 	.my-nav-container a {
@@ -254,19 +259,15 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 	}
 
 	.navbar-brand {
-	max-width: 125px;
-}
-
-	.card {
-		font-size: 2em;
-	}
+		max-width: 125px;
+  }
 
 	.my-nav-container a {
 		font-size: 1.25em;
 	}
 
 	#content {
-	padding-top: 20em;
+	padding-top: 15em;
 	}
 }
  
@@ -294,10 +295,6 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 
 	.navbar-brand {
 	max-width: 150px;
-}
-
-	.card {
-		font-size: 2.7em;
 	}
 
 	.my-nav-container a {
