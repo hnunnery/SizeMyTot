@@ -300,4 +300,10 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 	.my-nav-container a {
 		font-size: 1.5em;
 	}
+
+	.video-container iframe, .video-container object, .video-container embed {
+		left: 20vw;
+		width: 60vw;
+		height: 65%;
+	}
 }
