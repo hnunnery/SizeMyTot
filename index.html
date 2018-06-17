@@ -30,7 +30,7 @@
 
 <body class="landing-page sidebar-collapse">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top">
         <div class="container">
             <div class="navbar-translate">
                 <a class="navbar-brand" href="#page-top" rel="tooltip" title="Return to top" data-placement="bottom" target="_blank">
@@ -61,13 +61,14 @@
         </div>
     </nav>
     <!-- End Navbar -->
-    <div class="wrapper" id="page-top">
+    <div class="wrapper">
         <div class="page-header page-header-small">
             <div class="page-header-image" data-parallax="true" style="background-image: url('https://res.cloudinary.com/missionwebdev/image/upload/f_auto/a_270/v1525142980/shoe_pile_compressed.jpg');">
             </div>
-            <div class="container">
+            <div class="container" id="page-top">
                 <div class="content-center">
                     <h1 class="big-title">Size My Tot</h1>
+                    <h2>Find Your Toddler's Shoe Size</h2>
                 </div>
             </div>
         </div>
@@ -75,14 +76,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-lg-12" id="content">
-                        <h2>Find Your Toddler's Shoe Size</h2>
+                        
                     </div>
                 </div>
             </div>
         
 
             <!-- This starts the INPUT-FORM section -->
-            <div class="container my-calc-container">
+            <div class="container-fluid limit-vw my-calc-container">
         
                 <div class="row justify-content-center">
                     <div class="col-md-6">
@@ -98,37 +99,25 @@
                 </div>
                 <!-- calculator input section -->
         
-        
                 <!-- This starts the calculator OUTPUT-ROW section -->
-                <div class="row output-row">
-                    <div class="col-lg-4">
-                        <p id="pedipedOutput"></p>
-                        <p id="strideRiteOutput"></p>
-                        <p id="miniMelissaOutput"></p>
-                    </div>
-                    <div class="col-lg-4">
-                        <p id="vansOutput"></p>
-                        <p id="freshlyPickedSoftSolesOutput"></p>
-                        <p id="freshlyPickedSandalsOutput"></p>
-                    </div>
-                    <div class="col-lg-4">
-                        <p id="converseOutput"></p>
-                        <p id="seeKaiRunOutput"></p>
-                        <p id="paylessOutput"></p>
-                    </div>
-                </div>
-                <!-- ends output-row -->
-            </div>
-            <!-- ends my-calc-container -->
-        </div>
-        <!-- ends calculator container-->
+                <div class="output-row">
+                    <p id="converseOutput"></p>
+                    <p id="freshlyPickedOutput"></p>
+                    <p id="freshlyPickedSoftSolesOutput"></p>
+                    <p id="freshlyPickedSandalsOutput"></p>
+                    <p id="miniMelissaOutput"></p>
+                    <p id="paylessOutput"></p>
+                    <p id="pedipedOutput"></p>
+                    <p id="seeKaiRunOutput"></p>
+                    <p id="strideRiteOutput"></p>
+                    <p id="vansOutput"></p>
+                </div> <!-- ends output-row -->
+            </div> <!-- ends my-calc-container -->
+        </div> <!-- ends calculator container-->
         
         <!-- This starts the HOW IT WORKS section -->
         <div class="wrapper" id="how_it_works">
-        
-            <!-- <div class="row justify-content-center"> -->
-            <!-- <div class="col-xs-12"> -->
-            <h2 class="title">How It Works</h2>
+            <h2 class="title">-How It Works-</h2>
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/9ByC0GeNVrw" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -136,17 +125,14 @@
             <p class="steps">Measure Foot in Inches</p>
             <p class="steps">Enter Measurement into SizeMyTot</p>
             <p class="steps">Buy shoes wherever you want</p>
-            <!-- </div> -->
-            <!-- </div> -->
         </div>
         <!-- end how it works section -->
-        
-        
+   
         <!-- This starts the INCLUDED BRANDS cards section -->
         <div class="wrapper" id="included_brands">
         
             <div>
-                <h2 class="title">Included Brands</h2>
+                <h2 class="title">-Included Brands-</h2>
             </div>
             <div class="brands">
                 <div class="items">
@@ -185,27 +171,21 @@
                             <input name="bot-field" />
                         </label>
                     </p>
-                    <h2 class="title">Contact Us</h2>
+                    <h2 class="title">-Contact Us-</h2>
                     <p class="description">We welcome all feedback.</p>
                     <div class="row">
                         <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
                             <div class="input-group input-lg">
                                 <span class="input-group-addon">
-                                    <i class="now-ui-icons users_circle-08"></i>
-                                </span>
-                                <input type="text" class="form-control" placeholder="First Name...">
-                            </div>
-                            <div class="input-group input-lg">
-                                <span class="input-group-addon">
                                     <i class="now-ui-icons ui-1_email-85"></i>
                                 </span>
-                                <input type="email" class="form-control" placeholder="Email..." required>
+                                <input type="email" class="form-control" placeholder="Email Address" required>
                             </div>
                             <div class="textarea-container">
-                                <textarea class="form-control" name="name" rows="4" cols="80" placeholder="Type your message here..." required></textarea>
+                                <textarea class="form-control" name="name" rows="4" cols="80" placeholder=" Type message here..." required></textarea>
                             </div>
                             <div class="send-button">
-                                <a href="#pablo" class="btn btn-primary btn-round btn-block btn-lg">Send Message</a>
+                                <button type="submit" class="btn btn-primary btn-round btn-block btn-lg">Send Message</button>
                             </div>
                         </div>
                     </div>

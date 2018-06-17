@@ -1,34 +1,214 @@
-let pediped;
-let strideRite;
-let miniMelissa;
-let vans;
+// creating variables for each brand's size output
+let converse;
 let freshlyPickedSoftSoles;
 let freshlyPickedSandals;
-let converse;
-let seeKaiRun;
+let miniMelissa;
 let payless;
+let pediped;
+let seeKaiRun;
+let strideRite;
+let vans;
+// variable to save user input from form
 let footLength;
+// setting up the calculate button event listener
 let button = document.querySelector("#calculateBtn");
 button.addEventListener("click", calculateSizes);
 
+// makes the calculator work when user hits the "enter" key
 document.getElementById("formInput").onkeydown = () => {
     if (event.keyCode === 13) {
         calculateSizes();
     }
 };
 
+// main function engaging functions to calculate each brand's size
 function calculateSizes() {
     footLength = document.getElementById("formInput").value;
-    pedipedCalculator();
-    strideRiteCalculator();
-    miniMelissaCalculator();
-    vansCalculator();
+    converseCalculator();
     freshlyPickedSoftSolesCalculator();
     freshlyPickedSandalsCalculator();
-    converseCalculator();
-    seeKaiRunCalculator();
+    miniMelissaCalculator();
     paylessCalculator();
+    pedipedCalculator();
+    seeKaiRunCalculator();
+    strideRiteCalculator();
+    vansCalculator();
     outputSizes();
+}
+
+// Finding CONVERSE Shoe Size
+function converseCalculator() {
+
+    if (footLength >= 3.25 && footLength <= 6.667) {
+
+        if (footLength <= 3.667) {
+            converse = "Size 1";
+        } else if (footLength <= 4) {
+            converse = "Size 2";
+        } else if (footLength <= 4.143) {
+            converse = "Size 2.5";
+        } else if (footLength <= 4.333) {
+            converse = "Size 3";
+        } else if (footLength <= 4.5) {
+            converse = "Size 3.5";
+        } else if (footLength <= 4.667) {
+            converse = "Size 4";
+        } else if (footLength <= 4.8) {
+            converse = "Size 4.5";
+        } else if (footLength <= 5) {
+            converse = "Size 5";
+        } else if (footLength <= 5.167) {
+            converse = "Size 5.5";
+        } else if (footLength <= 5.333) {
+            converse = "Size 6";
+        } else if (footLength <= 5.5) {
+            converse = "Size 6.5";
+        } else if (footLength <= 5.667) {
+            converse = "Size 7";
+        } else if (footLength <= 5.833) {
+            converse = "Size 7.5";
+        } else if (footLength <= 6) {
+            converse = "Size 8";
+        } else if (footLength <= 6.143) {
+            converse = "Size 8.5";
+        } else if (footLength <= 6.286) {
+            converse = "Size 9";
+        } else if (footLength <= 6.5) {
+            converse = "Size 9.5";
+        } else if (footLength <= 6.667) {
+            converse = "Size 10";
+        }
+    } else {
+        converse = "no results";
+    }
+}
+
+// Finding FRESHLY PICKED SOFT SOLES Shoe Size
+function freshlyPickedSoftSolesCalculator() {
+
+    if (footLength >= 4 && footLength <= 6.95) {
+
+        if (footLength <= 3.5) {
+            freshlyPickedSoftSoles = "Size 0";
+        } else if (footLength <= 3.6) {
+            freshlyPickedSoftSoles = "Size 1";
+        } else if (footLength <= 4.45) {
+            freshlyPickedSoftSoles = "Size 2";
+        } else if (footLength <= 4.85) {
+            freshlyPickedSoftSoles = "Size 3";
+        } else if (footLength <= 5.3) {
+            freshlyPickedSoftSoles = "Size 4";
+        } else if (footLength <= 5.7) {
+            freshlyPickedSoftSoles = "Size 5";
+        } else if (footLength <= 5.97) {
+            freshlyPickedSoftSoles = "Size 6";
+        } else if (footLength <= 6.35) {
+            freshlyPickedSoftSoles = "Size 7";
+        } else if (footLength <= 6.6) {
+            freshlyPickedSoftSoles = "Size 8";
+        } else if (footLength <= 6.95) {
+            freshlyPickedSoftSoles = "Size 9";
+        }
+    } else {
+        freshlyPickedSoftSoles = "no results";
+    }
+}
+
+// Finding FRESHLY PICKED SANDALS Shoe Size
+function freshlyPickedSandalsCalculator() {
+
+    if (footLength >= 4 && footLength <= 8) {
+
+        if (footLength <= 4.5) {
+            freshlyPickedSandals = "Size 3";
+        } else if (footLength <= 5) {
+            freshlyPickedSandals = "Size 4";
+        } else if (footLength <= 5.5) {
+            freshlyPickedSandals = "Size 5";
+        } else if (footLength <= 5.75) {
+            freshlyPickedSandals = "Size 6";
+        } else if (footLength <= 6) {
+            freshlyPickedSandals = "Size 7";
+        } else if (footLength <= 6.25) {
+            freshlyPickedSandals = "Size 8";
+        } else if (footLength <= 6.5) {
+            freshlyPickedSandals = "Size 9";
+        } else if (footLength <= 7) {
+            freshlyPickedSandals = "Size 10";
+        } else if (footLength <= 7.25) {
+            freshlyPickedSandals = "Size 11";
+        } else if (footLength <= 7.5) {
+            freshlyPickedSandals = "Size 12";
+        } else if (footLength <= 8) {
+            freshlyPickedSandals = "Size 13";
+        }
+    } else {
+        freshlyPickedSandals = "no results";
+    }
+}
+
+// Finding MINI MELISSA Shoe Size
+function miniMelissaCalculator() {
+
+    if (footLength >= 4 && footLength <= 6.5) {
+
+        if (footLength <= 4.53) {
+            miniMelissa = "Size 5";
+        } else if (footLength <= 4.92) {
+            miniMelissa = "Size 6";
+        } else if (footLength <= 5.31) {
+            miniMelissa = "Size 7";
+        } else if (footLength <= 5.71) {
+            miniMelissa = "Size 8";
+        } else if (footLength <= 6.1) {
+            miniMelissa = "Size 9";
+        } else if (footLength <= 6.5) {
+            miniMelissa = "Size 10";
+        }
+    } else {
+        miniMelissa = "no results";
+    }
+}
+
+// Finding PAYLESS Shoe Size
+function paylessCalculator() {
+
+    if (footLength >= 3.15 && footLength <= 6.5625) {
+
+        if (footLength <= 3.5625) {
+            payless = "Size 1";
+        } else if (footLength <= 3.875) {
+            payless = "Size 2";
+        } else if (footLength <= 4.25) {
+            payless = "Size 3";
+        } else if (footLength <= 4.5625) {
+            payless = "Size 4";
+        } else if (footLength <= 4.875) {
+            payless = "Size 5";
+        } else if (footLength <= 5.0625) {
+            payless = "Size 5.5";
+        } else if (footLength <= 5.25) {
+            payless = "Size 6";
+        } else if (footLength <= 5.375) {
+            payless = "Size 6.5";
+        } else if (footLength <= 5.625) {
+            payless = "Size 7";
+        } else if (footLength <= 5.75) {
+            payless = "Size 7.5";
+        } else if (footLength <= 5.875) {
+            payless = "Size 8";
+        } else if (footLength <= 6.0625) {
+            payless = "Size 8.5";
+        } else if (footLength <= 6.25) {
+            payless = "Size 9";
+        } else if (footLength <= 6.375) {
+            payless = "Size 9.5";
+        } else if (footLength <= 6.5625) {
+            payless = "Size 10";
+        }
+    } else {
+        payless = "no results";
+    }
 }
 
 // Finding PEDIPED Shoe Size
@@ -88,6 +268,47 @@ function pedipedCalculator() {
     }  
 }
 
+// Finding SEE KAI RUN Shoe Size
+function seeKaiRunCalculator() {
+
+    if (footLength >= 3.85 && footLength <= 6.375) {
+
+        if (footLength <= 4.125) {
+            seeKaiRun = "Size 3";
+        } else if (footLength <= 4.375) {
+            seeKaiRun = "Size 3.5";
+        } else if (footLength <= 4.5) {
+            seeKaiRun = "Size 4";
+        } else if (footLength <= 4.625) {
+            seeKaiRun = "Size 4.5";
+        } else if (footLength <= 4.75) {
+            seeKaiRun = "Size 5";
+        } else if (footLength <= 5) {
+            seeKaiRun = "Size 5.5";
+        } else if (footLength <= 5.125) {
+            seeKaiRun = "Size 6";
+        } else if (footLength <= 5.25) {
+            seeKaiRun = "Size 6.5";
+        } else if (footLength <= 5.5) {
+            seeKaiRun = "Size 7";
+        } else if (footLength <= 5.625) {
+            seeKaiRun = "Size 7.5";
+        } else if (footLength <= 5.75) {
+            seeKaiRun = "Size 8";
+        } else if (footLength <= 6) {
+            seeKaiRun = "Size 8.5";
+        } else if (footLength <= 6.125) {
+            seeKaiRun = "Size 9";
+        } else if (footLength <= 6.25) {
+            seeKaiRun = "Size 9.5";
+        } else if (footLength <= 6.375) {
+            seeKaiRun = "Size 10";
+        }
+    } else {
+        seeKaiRun = "no results";
+    }
+}
+
 // Finding STRIDE RITE Shoe Size
 function strideRiteCalculator() {
 
@@ -125,29 +346,6 @@ function strideRiteCalculator() {
     } else {
         strideRite = "no results";
     }
-}
-
-// Finding MINI MELISSA Shoe Size
-function miniMelissaCalculator() {
-
-    if (footLength >= 4 && footLength <= 6.5) {
-
-        if (footLength <= 4.53) {
-            miniMelissa = "Size 5";
-        } else if (footLength <= 4.92) {
-            miniMelissa = "Size 6";
-        } else if (footLength <= 5.31) {
-            miniMelissa = "Size 7";
-        } else if (footLength <= 5.71) {
-            miniMelissa = "Size 8";
-        } else if (footLength <= 6.1) {
-            miniMelissa = "Size 9";
-        } else if (footLength <= 6.5) {
-            miniMelissa = "Size 10";
-        }
-    } else {
-        miniMelissa = "no results";
-    }  
 }
 
 // Finding Vans Shoe Size
@@ -211,207 +409,27 @@ function vansCalculator() {
     }  
 }
 
-// Finding FRESHLY PICKED SOFT SOLES Shoe Size
-function freshlyPickedSoftSolesCalculator() {
-
-    if (footLength >= 4 && footLength <= 6.95) {
-
-        if (footLength <= 3.5) {
-            freshlyPickedSoftSoles = "Size 0";
-        } else if (footLength <= 3.6) {
-            freshlyPickedSoftSoles = "Size 1";
-        } else if (footLength <= 4.45) {
-            freshlyPickedSoftSoles = "Size 2";
-        } else if (footLength <= 4.85) {
-            freshlyPickedSoftSoles = "Size 3";
-        } else if (footLength <= 5.3) {
-            freshlyPickedSoftSoles = "Size 4";
-        } else if (footLength <= 5.7) {
-            freshlyPickedSoftSoles = "Size 5";
-        } else if (footLength <= 5.97) {
-            freshlyPickedSoftSoles = "Size 6";
-        } else if (footLength <= 6.35) {
-            freshlyPickedSoftSoles = "Size 7";
-        } else if (footLength <= 6.6) {
-            freshlyPickedSoftSoles = "Size 8";
-        } else if (footLength <= 6.95) {
-            freshlyPickedSoftSoles = "Size 9";
-        } 
-    } else {
-        freshlyPickedSoftSoles = "no results";
-    }  
-}
-
-// Finding FRESHLY PICKED SANDALS Shoe Size
-function freshlyPickedSandalsCalculator() {
-
-    if (footLength >= 4 && footLength <= 8) {
-
-        if (footLength <= 4.5) {
-            freshlyPickedSandals = "Size 3";
-        } else if (footLength <= 5) {
-            freshlyPickedSandals = "Size 4";
-        } else if (footLength <= 5.5) {
-            freshlyPickedSandals = "Size 5";
-        } else if (footLength <= 5.75) {
-            freshlyPickedSandals = "Size 6";
-        } else if (footLength <= 6) {
-            freshlyPickedSandals = "Size 7";
-        } else if (footLength <= 6.25) {
-            freshlyPickedSandals = "Size 8";
-        } else if (footLength <= 6.5) {
-            freshlyPickedSandals = "Size 9";
-        } else if (footLength <= 7) {
-            freshlyPickedSandals = "Size 10";
-        } else if (footLength <= 7.25) {
-            freshlyPickedSandals = "Size 11";
-        } else if (footLength <= 7.5) {
-            freshlyPickedSandals = "Size 12";
-        } else if (footLength <= 8) {
-            freshlyPickedSandals = "Size 13";
-        } 
-    } else {
-        freshlyPickedSandals = "no results";
-    }  
-}
-
-// Finding CONVERSE Shoe Size
-function converseCalculator() {
-
-    if (footLength >= 3.25 && footLength <= 6.667) {
-
-        if (footLength <= 3.667) {
-            converse = "Size 1";
-        } else if (footLength <= 4) {
-            converse = "Size 2";
-        } else if (footLength <= 4.143) {
-            converse = "Size 2.5";
-        } else if (footLength <= 4.333) {
-            converse = "Size 3";
-        } else if (footLength <= 4.5) {
-            converse = "Size 3.5";
-        } else if (footLength <= 4.667) {
-            converse = "Size 4";
-        } else if (footLength <= 4.8) {
-            converse = "Size 4.5";
-        } else if (footLength <= 5) {
-            converse = "Size 5";
-        } else if (footLength <= 5.167) {
-            converse = "Size 5.5";
-        } else if (footLength <= 5.333) {
-            converse = "Size 6";
-        } else if (footLength <= 5.5) {
-            converse = "Size 6.5";
-        } else if (footLength <= 5.667) {
-            converse = "Size 7";
-        } else if (footLength <= 5.833) {
-            converse = "Size 7.5";
-        } else if (footLength <= 6) {
-            converse = "Size 8";
-        } else if (footLength <= 6.143) {
-            converse = "Size 8.5";
-        } else if (footLength <= 6.286) {
-            converse = "Size 9";
-        } else if (footLength <= 6.5) {
-            converse = "Size 9.5";
-        } else if (footLength <= 6.667) {
-            converse = "Size 10";
-        } 
-    } else {
-        converse = "no results";
-    }  
-}
-
-// Finding SEE KAI RUN Shoe Size
-function seeKaiRunCalculator() {
-
-    if (footLength >= 3.85 && footLength <= 6.375) {
-
-        if (footLength <= 4.125) {
-            seeKaiRun = "Size 3";
-        } else if (footLength <= 4.375) {
-            seeKaiRun = "Size 3.5";
-        } else if (footLength <= 4.5) {
-            seeKaiRun = "Size 4";
-        } else if (footLength <= 4.625) {
-            seeKaiRun = "Size 4.5";
-        } else if (footLength <= 4.75) {
-            seeKaiRun = "Size 5";
-        } else if (footLength <= 5) {
-            seeKaiRun = "Size 5.5";
-        } else if (footLength <= 5.125) {
-            seeKaiRun = "Size 6";
-        } else if (footLength <= 5.25) {
-            seeKaiRun = "Size 6.5";
-        } else if (footLength <= 5.5) {
-            seeKaiRun = "Size 7";
-        } else if (footLength <= 5.625) {
-            seeKaiRun = "Size 7.5";
-        } else if (footLength <= 5.75) {
-            seeKaiRun = "Size 8";
-        } else if (footLength <= 6) {
-            seeKaiRun = "Size 8.5";
-        } else if (footLength <= 6.125) {
-            seeKaiRun = "Size 9";
-        } else if (footLength <= 6.25) {
-            seeKaiRun = "Size 9.5";
-        } else if (footLength <= 6.375) {
-            seeKaiRun = "Size 10";
-        } 
-    } else {
-        seeKaiRun = "no results";
-    }  
-}
-
-// Finding PAYLESS Shoe Size
-function paylessCalculator() {
-
-    if (footLength >= 3.15 && footLength <= 6.5625) {
-        
-        if (footLength <= 3.5625) {
-            payless = "Size 1";
-        } else if (footLength <= 3.875) {
-            payless = "Size 2";
-        } else if (footLength <= 4.25) {
-            payless = "Size 3";
-        } else if (footLength <= 4.5625) {
-            payless = "Size 4";
-        } else if (footLength <= 4.875) {
-            payless = "Size 5";
-        } else if (footLength <= 5.0625) {
-            payless = "Size 5.5";
-        } else if (footLength <= 5.25) {
-            payless = "Size 6";
-        } else if (footLength <= 5.375) {
-            payless = "Size 6.5";
-        } else if (footLength <= 5.625) {
-            payless = "Size 7";
-        } else if (footLength <= 5.75) {
-            payless = "Size 7.5";
-        } else if (footLength <= 5.875) {
-            payless = "Size 8";
-        } else if (footLength <= 6.0625) {
-            payless = "Size 8.5";
-        } else if (footLength <= 6.25) {
-            payless = "Size 9";
-        } else if (footLength <= 6.375) {
-            payless = "Size 9.5";
-        } else if (footLength <= 6.5625) {
-            payless = "Size 10";
-        } 
-    } else {
-        payless = "no results";
-    }  
-}
-
+// setting innerHTML to output brand specific size info
 function outputSizes() {
-    document.getElementById("pedipedOutput").innerHTML="pediped: " + pediped;
-    document.getElementById("strideRiteOutput").innerHTML="Stride Rite: " + strideRite;
-    document.getElementById("miniMelissaOutput").innerHTML="Mini Melissa: " + miniMelissa;
-    document.getElementById("vansOutput").innerHTML="Vans: " + vans;
-    document.getElementById("freshlyPickedSoftSolesOutput").innerHTML="Freshly Picked - Soft Soles: " + freshlyPickedSoftSoles;
-     document.getElementById("freshlyPickedSandalsOutput").innerHTML="Freshly Picked - Sandals: " + freshlyPickedSandals;
-    document.getElementById("converseOutput").innerHTML="Converse: " + converse;
-    document.getElementById("seeKaiRunOutput").innerHTML="See Kai Run: " + seeKaiRun;
-    document.getElementById("paylessOutput").innerHTML="Payless: " + payless;
+
+    document.getElementById("freshlyPickedOutput").innerHTML = `-Freshly Picked-`;
+
+    document.getElementById("freshlyPickedSoftSolesOutput").innerHTML = `Soft Soles: ${freshlyPickedSoftSoles}`;
+
+    document.getElementById("freshlyPickedSandalsOutput").innerHTML = `Sandals: ${freshlyPickedSandals}`;
+
+    document.getElementById("miniMelissaOutput").innerHTML = `Mini Melissa: ${miniMelissa}`;
+
+    document.getElementById("paylessOutput").innerHTML = `Payless: ${payless}`;
+
+    document.getElementById("pedipedOutput").innerHTML=`pediped: ${pediped}`;
+
+    document.getElementById("seeKaiRunOutput").innerHTML = `See Kai Run: ${seeKaiRun}`;
+
+    document.getElementById("strideRiteOutput").innerHTML=`Stride Rite: ${strideRite}`;
+    
+    document.getElementById("vansOutput").innerHTML=`Vans: ${vans}`;
+    
+    document.getElementById("converseOutput").innerHTML=`Converse: ${converse}`;
+
 }
