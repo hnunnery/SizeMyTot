@@ -1,0 +1,148 @@
+body {
+  font-size: 1.5em;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.output-row {
+	margin-top: 3%;
+	font-weight: bold;
+	color: black;
+	white-space: nowrap;
+}
+
+.big-title {
+  font-size: 2.5em;
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.title {
+  font-size: 1.75em;
+}
+
+#calculator h2 {
+  font-size: 1.25em;
+}
+
+#formInput::placeholder, .form-control::placeholder {
+  color: rgba(0,0,0,0.5);
+}
+
+.steps {
+  font-size: .8em;
+}
+
+.my-calc-container {
+	min-height: 18em;
+}
+
+.video-container {
+	position: relative;
+	padding-bottom: 51.5%;
+	padding-top: 25px; 
+	height: 0; 
+	overflow: hidden;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+	position: absolute;
+	top: 0;
+	left: 5vw;
+	width: 90vw;
+	height: 100%;
+}
+
+.brands {
+	padding-left: 1%;
+	padding-right: 1%;
+  display: grid;
+  grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, minmax(270px, auto));
+	justify-content: center;
+}
+		
+.items {	
+	background-color: rgb(97, 14, 175);
+	font-size: 1.5em;
+	max-width: 22rem;
+	white-space: nowrap;
+	border-radius: 5px;
+}
+
+.items a {
+  color: white;
+}
+
+.wrapper, .container, .container-fluid, #formInput{
+	text-align: center;
+}
+
+#how_it_works, #included_brands, #contact_us {
+  padding-top: 10vh;
+}
+
+
+/* .width90vw {
+  width: 90vw;
+}
+
+.center-img img {
+    margin-top: 0;
+    margin-bottom: 50px;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+.project {
+  margin-bottom: 50px;
+} */
+
+/* 
+Extra small devices (portrait phones, less than 544px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+
+/* Small devices (landscape phones, 544px and up) */
+@media (min-width: 544px) {
+  .big-title {
+    font-size: 4em;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .big-title {
+    font-size: 5em;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .big-title {
+    font-size: 6.5em;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .big-title {
+    font-size: 8em;
+  }
+  .video-container {
+	  padding-bottom: 41.5%;
+    padding-top: 25px; 
+  }
+  .video-container iframe, .video-container object, .video-container embed {
+    width: 70vw;
+    left: 15vw;
+  }
+}
