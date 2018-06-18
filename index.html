@@ -31,10 +31,11 @@
 <body class="landing-page sidebar-collapse">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-primary fixed-top">
-        <div class="container">
+        <div class="container my-text-shadow">
             <div class="navbar-translate">
                 <a class="navbar-brand" href="#page-top" rel="tooltip" title="Return to top" data-placement="bottom" target="_blank">
                     Size My Tot
+                    <!-- <img src="https://res.cloudinary.com/missionwebdev/image/upload/c_scale,f_auto,h_105,q_auto/v1524891189/SizeMyTot.png"> -->
                 </a>
                 <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-bar bar1"></span>
@@ -62,7 +63,7 @@
     </nav>
     <!-- End Navbar -->
     <div class="wrapper">
-        <div class="page-header page-header-small">
+        <div class="page-header page-header-small my-text-shadow">
             <div class="page-header-image" data-parallax="true" style="background-image: url('https://res.cloudinary.com/missionwebdev/image/upload/f_auto/a_270/v1525142980/shoe_pile_compressed.jpg');">
             </div>
             <div class="container" id="page-top">
@@ -83,7 +84,7 @@
         
 
             <!-- This starts the INPUT-FORM section -->
-            <div class="container-fluid limit-vw my-calc-container">
+            <div class="container-fluid limit-vw-75 my-calc-container">
         
                 <div class="row justify-content-center">
                     <div class="col-md-6">
@@ -116,7 +117,7 @@
         </div> <!-- ends calculator container-->
         
         <!-- This starts the HOW IT WORKS section -->
-        <div class="wrapper" id="how_it_works">
+        <div class="wrapper my-text-shadow" id="how_it_works">
             <h2 class="title">-How It Works-</h2>
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/9ByC0GeNVrw" frameborder="0" allowfullscreen></iframe>
@@ -129,12 +130,11 @@
         <!-- end how it works section -->
    
         <!-- This starts the INCLUDED BRANDS cards section -->
-        <div class="wrapper" id="included_brands">
-        
+        <div class="wrapper my-text-shadow" id="included_brands">
             <div>
                 <h2 class="title">-Included Brands-</h2>
             </div>
-            <div class="brands">
+            <div class="brands limit-vw-75">
                 <div class="items">
                     <a href="https://www.pediped.com/" target="_blank">pediped</a>
                 </div>
@@ -171,7 +171,7 @@
                             <input name="bot-field" />
                         </label>
                     </p>
-                    <h2 class="title">-Contact Us-</h2>
+                    <h2 class="title my-text-shadow">-Contact Us-</h2>
                     <p class="description">We welcome all feedback.</p>
                     <div class="row">
                         <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
@@ -179,10 +179,10 @@
                                 <span class="input-group-addon">
                                     <i class="now-ui-icons ui-1_email-85"></i>
                                 </span>
-                                <input type="email" class="form-control" placeholder="Email Address" required>
+                                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
                             </div>
                             <div class="textarea-container">
-                                <textarea class="form-control" name="name" rows="4" cols="80" placeholder=" Type message here..." required></textarea>
+                                <textarea class="form-control" name="message" rows="4" cols="80" placeholder=" Type message here..." required></textarea>
                             </div>
                             <div class="send-button">
                                 <button type="submit" class="btn btn-primary btn-round btn-block btn-lg">Send Message</button>
