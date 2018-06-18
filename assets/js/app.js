@@ -1,11 +1,17 @@
 // creating variables for each brand's size output
 let converse;
+let crocs;
 let freshlyPickedSoftSoles;
 let freshlyPickedSandals;
 let miniMelissa;
+// let native;
+let newBalance;
+let nike;
 let payless;
 let pediped;
+let plae;
 let seeKaiRun;
+// let sperry;
 let strideRite;
 let vans;
 // variable to save user input from form
@@ -25,12 +31,18 @@ document.getElementById("formInput").onkeydown = () => {
 function calculateSizes() {
     footLength = document.getElementById("formInput").value;
     converseCalculator();
+    crocsCalculator();
     freshlyPickedSoftSolesCalculator();
     freshlyPickedSandalsCalculator();
     miniMelissaCalculator();
+    // nativeCalculator();
+    newBalanceCalculator();
+    nikeCalculator();
     paylessCalculator();
     pedipedCalculator();
+    plaeCalculator();
     seeKaiRunCalculator();
+    // sperryCalculator();
     strideRiteCalculator();
     vansCalculator();
     outputSizes();
@@ -80,6 +92,51 @@ function converseCalculator() {
         }
     } else {
         converse = "no results";
+    }
+}
+
+// Finding CROCS Shoe Size
+function crocsCalculator() {
+
+    if (footLength >= 3.4 && footLength <= 9.125) {
+
+        if (footLength <= 3.875) {
+            crocs = "Size 2";
+        } else if (footLength <= 4.125) {
+            crocs = "Size 3";
+        } else if (footLength <= 4.5) {
+            crocs = "Size 4";
+        } else if (footLength <= 4.875) {
+            crocs = "Size 5";
+        } else if (footLength <= 5.125) {
+            crocs = "Size 6";
+        } else if (footLength <= 5.5) {
+            crocs = "Size 7";
+        } else if (footLength <= 5.875) {
+            crocs = "Size 8";
+        } else if (footLength <= 6.125) {
+            crocs = "Size 9";
+        } else if (footLength <= 6.5) {
+            crocs = "Size 10";
+        } else if (footLength <= 6.875) {
+            crocs = "Size 11";
+        } else if (footLength <= 7.125) {
+            crocs = "Size 12";
+        } else if (footLength <= 7.5) {
+            crocs = "Size 13";
+        } else if (footLength <= 7.875) {
+            crocs = "Size 1";
+        } else if (footLength <= 8.125) {
+            crocs = "Size 2";
+        } else if (footLength <= 8.5) {
+            crocs = "Size 3";
+        } else if (footLength <= 8.875) {
+            crocs = "Size 4";
+        } else if (footLength <= 9.125) {
+            crocs = "Size 5";
+        } 
+    } else {
+        crocs = "no results";
     }
 }
 
@@ -167,6 +224,172 @@ function miniMelissaCalculator() {
         }
     } else {
         miniMelissa = "no results";
+    }
+}
+
+// Finding NEW BALANCE Shoe Size
+function newBalanceCalculator() {
+
+    if (footLength >= 3.2 && footLength <= 9.75) {
+
+        if (footLength <= 3.5) {
+          newBalance = "Size 1";
+        } else if (footLength <= 3.75) {
+          newBalance = "Size 2";
+        } else if (footLength <= 4.125) {
+          newBalance = "Size 3";
+        } else if (footLength <= 4.5) {
+          newBalance = "Size 4";
+        } else if (footLength <= 4.75) {
+          newBalance = "Size 5";
+        } else if (footLength <= 5) {
+          newBalance = "Size 5.5";
+        } else if (footLength <= 5.125) {
+          newBalance = "Size 6";
+        } else if (footLength <= 5.25) {
+          newBalance = "Size 6.5";
+        } else if (footLength <= 5.5) {
+          newBalance = "Size 7";
+        } else if (footLength <= 5.625) {
+          newBalance = "Size 7.5";
+        } else if (footLength <= 5.75) {
+          newBalance = "Size 8";
+        } else if (footLength <= 6) {
+          newBalance = "Size 8.5";
+        } else if (footLength <= 6.125) {
+          newBalance = "Size 9";
+        } else if (footLength <= 6.25) {
+          newBalance = "Size 9.5";
+        } else if (footLength <= 6.5) {
+          newBalance = "Size 10";
+        } else if (footLength <= 6.625) {
+          newBalance = "Size 10.5";
+        } else if (footLength <= 6.75) {
+          newBalance = "Size 11";
+        } else if (footLength <= 7) {
+          newBalance = "Size 11.5";
+        } else if (footLength <= 7.125) {
+          newBalance = "Size 12";
+        } else if (footLength <= 7.25) {
+          newBalance = "Size 12.5";
+        } else if (footLength <= 7.5) {
+          newBalance = "Size 13";
+        } else if (footLength <= 7.625) {
+          newBalance = "Size 13.5";
+        } else if (footLength <= 7.75) {
+          newBalance = "Size 1";
+        } else if (footLength <= 8) {
+          newBalance = "Size 1.5";
+        } else if (footLength <= 8.125) {
+          newBalance = "Size 2";
+        } else if (footLength <= 8.25) {
+          newBalance = "Size 2.5";
+        } else if (footLength <= 8.5) {
+          newBalance = "Size 3";
+        } else if (footLength <= 8.625) {
+          newBalance = "Size 3.5";
+        } else if (footLength <= 8.75) {
+          newBalance = "Size 4";
+        } else if (footLength <= 9) {
+          newBalance = "Size 4.5";
+        } else if (footLength <= 9.125) {
+          newBalance = "Size 5";
+        } else if (footLength <= 9.25) {
+          newBalance = "Size 5.5";
+        } else if (footLength <= 9.5) {
+          newBalance = "Size 6";
+        } else if (footLength <= 9.625) {
+          newBalance = "Size 6.5";
+        } else if (footLength <= 9.75) {
+          newBalance = "Size 7";
+        }
+    } else {
+        newBalance = "no results";
+    }
+}
+
+// Finding NIKE Shoe Size
+function nikeCalculator() {
+
+    if (footLength >= 3.3 && footLength <= 9.625) {
+
+        if (footLength <= 3.625) {
+            nike = "Size 2C";
+        } else if (footLength <= 3.875) {
+            nike = "Size 2.5C";
+        } else if (footLength <= 4) {
+            nike = "Size 3C";
+        } else if (footLength <= 4.125) {
+            nike = "Size 3.5C";
+        } else if (footLength <= 4.375) {
+            nike = "Size 4C";
+        } else if (footLength <= 4.5) {
+            nike = "Size 4.5C";
+        } else if (footLength <= 4.625) {
+            nike = "Size 5C";
+        } else if (footLength <= 4.875) {
+            nike = "Size 5.5C";
+        } else if (footLength <= 5) {
+            nike = "Size 6C";
+        } else if (footLength <= 5.125) {
+            nike = "Size 6.5C";
+        } else if (footLength <= 5.375) {
+            nike = "Size 7C";
+        } else if (footLength <= 5.5) {
+            nike = "Size 7.5C";
+        } else if (footLength <= 5.625) {
+            nike = "Size 8C";
+        } else if (footLength <= 5.875) {
+            nike = "Size 8.5C";
+        } else if (footLength <= 6) {
+            nike = "Size 9C";
+        } else if (footLength <= 6.125) {
+            nike = "Size 9.5C";
+        } else if (footLength <= 6.375) {
+            nike = "Size 10C";
+        } else if (footLength <= 6.5) {
+            nike = "Size 10.5C";
+        } else if (footLength <= 6.625) {
+            nike = "Size 11C";
+        } else if (footLength <= 6.875) {
+            nike = "Size 11.5C";
+        } else if (footLength <= 7) {
+            nike = "Size 12C";
+        } else if (footLength <= 7.125) {
+            nike = "Size 12.5C";
+        } else if (footLength <= 7.375) {
+            nike = "Size 13C";
+        } else if (footLength <= 7.5) {
+            nike = "Size 13.5C";
+        } else if (footLength <= 7.625) {
+            nike = "Size 1Y";
+        } else if (footLength <= 7.875) {
+            nike = "Size 1.5Y";
+        } else if (footLength <= 8) {
+            nike = "Size 2Y";
+        } else if (footLength <= 8.125) {
+            nike = "Size 2.5Y";
+        } else if (footLength <= 8.375) {
+            nike = "Size 3Y";
+        } else if (footLength <= 8.5) {
+            nike = "Size 3.5Y";
+        } else if (footLength <= 8.625) {
+            nike = "Size 4Y";
+        } else if (footLength <= 8.875) {
+            nike = "Size 4.5Y";
+        } else if (footLength <= 9) {
+            nike = "Size 5Y";
+        } else if (footLength <= 9.125) {
+            nike = "Size 5.5Y";
+        } else if (footLength <= 9.375) {
+            nike = "Size 6Y";
+        } else if (footLength <= 9.5) {
+            nike = "Size 6.5Y";
+        } else if (footLength <= 9.625) {
+            nike = "Size 7Y";
+        }
+    } else {
+        nike = "no results";
     }
 }
 
@@ -266,6 +489,69 @@ function pedipedCalculator() {
     } else {
         pediped = "no results";
     }  
+}
+
+// Finding PLAE Shoe Size
+function plaeCalculator() {
+
+    if (footLength >= 4.45 && footLength <= 9) {
+
+        if (footLength <= 4.75) {
+            plae = "Size 5";
+        } else if (footLength <= 5) {
+            plae = "Size 5.5";
+        } else if (footLength <= 5.125) {
+            plae = "Size 6";
+        } else if (footLength <= 5.25) {
+            plae = "Size 6.5";
+        } else if (footLength <= 5.5) {
+            plae = "Size 7";
+        } else if (footLength <= 5.625) {
+            plae = "Size 7.5";
+        } else if (footLength <= 5.75) {
+            plae = "Size 8";
+        } else if (footLength <= 6) {
+            plae = "Size 8.5";
+        } else if (footLength <= 6.125) {
+            plae = "Size 9";
+        } else if (footLength <= 6.25) {
+            plae = "Size 9.5";
+        } else if (footLength <= 6.5) {
+            plae = "Size 10";
+        } else if (footLength <= 6.625) {
+            plae = "Size 10.5";
+        } else if (footLength <= 6.75) {
+            plae = "Size 11";
+        } else if (footLength <= 7) {
+            plae = "Size 11.5";
+        } else if (footLength <= 7.125) {
+            plae = "Size 12";
+        } else if (footLength <= 7.25) {
+            plae = "Size 12.5";
+        } else if (footLength <= 7.5) {
+            plae = "Size 13";
+        } else if (footLength <= 7.625) {
+            plae = "Size 13.5";
+        } else if (footLength <= 7.75) {
+            plae = "Size 1";
+        } else if (footLength <= 8) {
+            plae = "Size 1.5";
+        } else if (footLength <= 8.125) {
+            plae = "Size 2";
+        } else if (footLength <= 8.25) {
+            plae = "Size 2.5";
+        } else if (footLength <= 8.5) {
+            plae = "Size 3";
+        } else if (footLength <= 8.625) {
+            plae = "Size 3.5";
+        } else if (footLength <= 8.75) {
+            plae = "Size 4";
+        } else if (footLength <= 9) {
+            plae = "Size 4.5";
+        } 
+    } else {
+        plae = "no results";
+    }
 }
 
 // Finding SEE KAI RUN Shoe Size
@@ -412,24 +698,33 @@ function vansCalculator() {
 // setting innerHTML to output brand specific size info
 function outputSizes() {
 
-    document.getElementById("freshlyPickedOutput").innerHTML = `-Freshly Picked-`;
+    document.getElementById("converseOutput").innerHTML = `Converse: ${converse}`;
 
-    document.getElementById("freshlyPickedSoftSolesOutput").innerHTML = `Soft Soles: ${freshlyPickedSoftSoles}`;
+    document.getElementById("crocsOutput").innerHTML = `Crocs: ${crocs}`;
 
-    document.getElementById("freshlyPickedSandalsOutput").innerHTML = `Sandals: ${freshlyPickedSandals}`;
+    document.getElementById("freshlyPickedSoftSolesOutput").innerHTML = `FP Soft Soles: ${freshlyPickedSoftSoles}`;
+
+    document.getElementById("freshlyPickedSandalsOutput").innerHTML = `FP Sandals: ${freshlyPickedSandals}`;
 
     document.getElementById("miniMelissaOutput").innerHTML = `Mini Melissa: ${miniMelissa}`;
+
+    // document.getElementById("nativeOutput").innerHTML = `Native: ${native}`;
+
+    document.getElementById("newBalanceOutput").innerHTML = `New Balance: ${newBalance}`;
+
+    document.getElementById("nikeOutput").innerHTML = `Nike: ${nike}`;
 
     document.getElementById("paylessOutput").innerHTML = `Payless: ${payless}`;
 
     document.getElementById("pedipedOutput").innerHTML=`pediped: ${pediped}`;
 
+    document.getElementById("plaeOutput").innerHTML = `plae: ${plae}`;
+
     document.getElementById("seeKaiRunOutput").innerHTML = `See Kai Run: ${seeKaiRun}`;
+
+    // document.getElementById("sperryOutput").innerHTML = `Sperry: ${sperry}`;
 
     document.getElementById("strideRiteOutput").innerHTML=`Stride Rite: ${strideRite}`;
     
     document.getElementById("vansOutput").innerHTML=`Vans: ${vans}`;
-    
-    document.getElementById("converseOutput").innerHTML=`Converse: ${converse}`;
-
 }
