@@ -146,7 +146,7 @@ No media query since this is the default in Bootstrap because it is "mobile firs
 /* Small devices (landscape phones, 544px and up) */
 @media (min-width: 544px) {
   .big-title {
-    font-size: 4em;
+    font-size: 3.8em;
   }
   .title {
     font-size: 2.2em;
