@@ -4,7 +4,7 @@ let crocs;
 let freshlyPickedSoftSoles;
 let freshlyPickedSandals;
 let miniMelissa;
-// let native;
+let native;
 let newBalance;
 let nike;
 let payless;
@@ -35,7 +35,7 @@ function calculateSizes() {
     freshlyPickedSoftSolesCalculator();
     freshlyPickedSandalsCalculator();
     miniMelissaCalculator();
-    // nativeCalculator();
+    nativeCalculator();
     newBalanceCalculator();
     nikeCalculator();
     paylessCalculator();
@@ -224,6 +224,77 @@ function miniMelissaCalculator() {
         }
     } else {
         miniMelissa = "no results";
+    }
+}
+
+// Finding NATIVE Shoe Size
+function nativeCalculator() {
+
+    if (footLength >= 4.45 && footLength <= 9.6) {
+
+        if (footLength <= 4.75) {
+            native = "Size C4";
+        } else if (footLength <= 4.9) {
+            native = "Size C5";
+        } else if (footLength <= 5) {
+            native = "Size C5.5";
+        } else if (footLength <= 5.3) {
+            native = "Size C6";
+        } else if (footLength <= 5.4) {
+            native = "Size C6.5";
+        } else if (footLength <= 5.5) {
+            native = "Size C7";
+        } else if (footLength <= 5.7) {
+            native = "Size C7.5";
+        } else if (footLength <= 5.9) {
+            native = "Size C8";
+        } else if (footLength <= 6) {
+            native = "Size C8.5";
+        } else if (footLength <= 6.3) {
+            native = "Size C9";
+        } else if (footLength <= 6.5) {
+            native = "Size C9.5";
+        } else if (footLength <= 6.7) {
+            native = "Size C10";
+        } else if (footLength <= 6.8) {
+            native = "Size C10.5";
+        } else if (footLength <= 6.9) {
+            native = "Size C11";
+        } else if (footLength <= 7) {
+            native = "Size C11.5";
+        } else if (footLength <= 7.2) {
+            native = "Size C12";
+        } else if (footLength <= 7.5) {
+            native = "Size C12.5";
+        } else if (footLength <= 7.7) {
+            native = "Size C13";
+        } else if (footLength <= 7.9) {
+            native = "Size C13.5";
+        } else if (footLength <= 7.9) {
+            native = "Size J1";
+        } else if (footLength <= 8) {
+            native = "Size J1.5";
+        } else if (footLength <= 8.2) {
+            native = "Size J2";
+        } else if (footLength <= 8.45) {
+            native = "Size J2.5";
+        } else if (footLength <= 8.6) {
+            native = "Size J3";
+        } else if (footLength <= 8.85) {
+            native = "Size J3.5";
+        } else if (footLength <= 9) {
+            native = "Size J4";
+        } else if (footLength <= 9.15) {
+            native = "Size J4.5";
+        } else if (footLength <= 9.25) {
+            native = "Size J5";
+        } else if (footLength <= 9.45) {
+            native = "Size J5.5";
+        } else if (footLength <= 9.6) {
+            native = "Size J6";
+        }
+    } else {
+        native = "no results";
     }
 }
 
@@ -708,7 +779,7 @@ function outputSizes() {
 
     document.getElementById("miniMelissaOutput").innerHTML = `Mini Melissa: ${miniMelissa}`;
 
-    // document.getElementById("nativeOutput").innerHTML = `Native: ${native}`;
+    document.getElementById("nativeOutput").innerHTML = `Native: ${native}`;
 
     document.getElementById("newBalanceOutput").innerHTML = `New Balance: ${newBalance}`;
 
