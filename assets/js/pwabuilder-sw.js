@@ -3,15 +3,15 @@
 var CACHE = 'pwabuilder-precache';
 var precacheFiles = [
   /* Add an array of files to precache for your app */
-  "/assets/css/bootstrap.min.css",
-  "/assets/css/now-ui-kit.css",
-  "/assets/css/style.css",
-  "/assets/js/core/bootstrap.min.js",
-  "/assets/js/core/jquery.3.2.1.min.js",
-  "/assets/js/core/popper.min.js",
-  "/assets/js/app.js",
-  "/assets/js/now-ui-kit.js",
-  "/assets/img/blurred-image-1.jpg",
+  "assets/css/bootstrap.min.css",
+  "assets/css/now-ui-kit.css",
+  "assets/css/style.css",
+  "assets/js/core/bootstrap.min.js",
+  "assets/js/core/jquery.3.2.1.min.js",
+  "assets/js/core/popper.min.js",
+  "assets/js/app.js",
+  "assets/js/now-ui-kit.js",
+  "assets/img/blurred-image-1.jpg",
   "https://res.cloudinary.com/missionwebdev/image/upload/f_auto/a_270/v1525142980/shoe_pile_compressed.jpg",
   "https://fonts.googleapis.com/css?family=Indie+Flower",
   "index.html"

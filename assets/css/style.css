@@ -58,6 +58,7 @@ body {
 /* needed to make form placeholder text darker and easier to read */
 #formInput::placeholder, .form-control::placeholder {
   color: rgba(0,0,0,0.5);
+  text-align: center;
 }
 
 /* styling for calculator ouput brand sizes */
