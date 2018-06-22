@@ -1,0 +1,112 @@
+{
+    "name": "SizeMyTot",
+    "short_name": "SizeMyTot",
+    "icons": [
+        {
+            "src": "/images/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/5763a8d7-87d5-354e-3988-ded79b3e9ade.webPlatform.png",
+            "sizes": "44x44",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/81d69b7c-5602-4310-9680-d86966da8b76.webPlatform.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/ea346666-8928-919f-c01f-b8ef9fffb20b.webPlatform.png",
+            "sizes": "1240x600",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/16a02cb4-efad-65f1-9249-6ab4b2d1d04b.webPlatform.png",
+            "sizes": "300x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/6afd6fc0-1d4c-593e-aaef-f3710c158ac9.webPlatform.png",
+            "sizes": "150x150",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/60da6db0-e62f-d5f2-66f7-7e4ada413357.webPlatform.png",
+            "sizes": "88x88",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/db4df623-60c6-e9ed-a984-6813737c6a6b.webPlatform.png",
+            "sizes": "24x24",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/2e108299-097a-80ab-94b5-eff036c8af0e.webPlatform.png",
+            "sizes": "50x50",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/68adcdd4-37c9-cc89-59c1-bf52ff06ca32.webPlatform.png",
+            "sizes": "620x300",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/ce66229c-d0a1-1ba9-f4a0-598134a67ed1.webPlatform.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/d24f6ec8-6fdb-6209-3d87-e6f924ca9e1d.webPlatform.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/32670928-dc46-71c2-2b57-7b92103717a2.webPlatform.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/b745e9d3-46c7-a336-6b7a-30231ed351bc.webPlatform.png",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/eac9f8b8-cb34-1074-f416-9f577b6a668f.webPlatform.png",
+            "sizes": "1024x1024",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/78960555-f099-dfad-4491-016c142fb349.webPlatform.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/934f08a0-8132-cb44-cb7f-a78ccd3a953c.webPlatform.png",
+            "sizes": "152x152",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/1f695230-8df7-89c5-1773-27c475d82b1b.webPlatform.png",
+            "sizes": "120x120",
+            "type": "image/png"
+        },
+        {
+            "src": "/images/d4299f3d-220f-f544-ada4-83a29d3d8933.webPlatform.png",
+            "sizes": "76x76",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#610eaf",
+    "background_color": "#610eaf",
+    "start_url": "https://sizemytot.com/",
+    "display": "standalone",
+    "lang": "",
+    "description": "A calculator that lists your child's shoe size in several brands based on their foot length in inches."
+}
