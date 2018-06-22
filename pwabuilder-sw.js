@@ -12,6 +12,7 @@ var precacheFiles = [
   "assets/js/app.js",
   "assets/js/now-ui-kit.js",
   "assets/img/blurred-image-1.jpg",
+  "manifest.json",
   "https://res.cloudinary.com/missionwebdev/image/upload/f_auto/a_270/v1525142980/shoe_pile_compressed.jpg",
   "https://fonts.googleapis.com/css?family=Indie+Flower",
   "index.html"
