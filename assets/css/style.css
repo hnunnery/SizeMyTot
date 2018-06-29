@@ -79,6 +79,10 @@ body {
 	min-height: 18em;
 }
 
+.btn {
+  box-shadow: 0 0 20px gray;
+}
+
 .video-container {
 	position: relative;
 	padding-bottom: 51.5%;
@@ -92,7 +96,7 @@ body {
 	top: 0;
 	left: 5vw;
 	width: 90vw;
-	height: 100%;
+  height: 100%;
 }
 
 .brands {
@@ -102,7 +106,6 @@ body {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(280px, auto));
-  justify-content: center;
 }
 		
 .items {	
@@ -111,6 +114,10 @@ body {
 	max-width: 22rem;
 	white-space: nowrap;
   border-radius: 5px;
+  box-shadow: 0 0 25px gray;
+  margin: 0 auto;
+  list-style: none;
+  min-width: 300px;
 }
 
 .items a {
