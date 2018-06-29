@@ -10,20 +10,6 @@
     <meta name="keywords" content="baby, toddler, kids, kid, tot, child, shoe, size, chart, calculator, find, sizing, pediped, stride, rite, freshly, picked, nike, converse, mini, melissa">
     <meta name="robots" content="noarchive">
     <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-    <!-- This is the SERVICE WORKER with the combined offline experience (Offline page + Offline copy of pages -->
-    <script>
-        //Checking for ServiceWorker
-        if (navigator.serviceWorker.controller) {
-            console.log('Active service worker found, no need to register')
-        } else {
-            //Register the ServiceWorker
-            navigator.serviceWorker.register("service-worker.js", {
-                scope: "./"
-            }).then(function (reg) {
-                console.log("Service worker has been registered for scope:" + reg.scope);
-            });
-        }
-    </script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="mask-icon" href="safari-pinned-tab.svg" color="#610eaf">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -33,7 +19,6 @@
     <meta name="msapplication-TileColor" content="#610eaf">
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet" />
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" /> -->
     <!-- CSS Files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
@@ -64,9 +49,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#included_brands">Included Brands</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact_us">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -135,9 +117,6 @@
         <!-- This starts the HOW IT WORKS section -->
         <div class="wrapper my-text-shadow" id="how_it_works">
             <h2 class="title">-How It Works-</h2>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9ByC0GeNVrw" frameborder="0" allowfullscreen></iframe>
-            </div>
             <h4>3 Easy Steps</h4>
             <p class="steps">Measure Foot in Inches</p>
             <p class="steps">Enter Measurement into SizeMyTot</p>
@@ -151,78 +130,51 @@
                 <h2 class="title">-Included Brands-</h2>
             </div>
             <div class="brands limit-vw-75">
-                <li class="items">
+                <div class="items">
                     <a href="https://www.converse.com/us/en_us/pw/kids-converse/1meZpir" target="_blank" rel="nofollow">Converse</a>
-                </li>
-                <li class="items">
+                </div>
+                <div class="items">
                     <a href="https://www.crocs.com/c/kids/new-arrivals?adid=google_mobile_ppc_Footwear-Unisex-Kids_Brand-Childrens&ef_id=WWQj3QAAAGMO-gQF:20180618040201:s&s_kwcid=AL!4035!3!91576752370!e!!g!!crocs%20kids" target="_blank" rel="nofollow">Crocs</a>
-                </li>
-                <li class="items">
+                </div>
+                <div class="items">
                     <a href="https://freshlypicked.com/" target="_blank" rel="nofollow">Freshly Picked</a>
-                </li>
-                <li class="items">
+                </div>
+                <div class="items">
                     <a href="http://shopmelissa.com/mini" target="_blank" rel="nofollow">Mini Melissa</a>
-                </li>
-                <li class="items">
+                </div>
+                <div class="items">
                     <a href="https://www.nativeshoes.com/kids" target="_blank" rel="nofollow">Native</a>
-                </li>
-                <li class="items">
+                </div>
+                <div class="items">
                     <a href="https://www.newbalance.com/kids/kids-landing-page/" target="_blank" rel="nofollow">New Balance</a>
-                </li>
-                <li class="items">
+                </div>
+                <div class="items">
                     <a href="https://store.nike.com/us/en_us/pw/kids-shoes/1meZoi3" target="_blank" rel="nofollow">Nike</a>
-                </li>
-                <li class="items">
+                </div>
+                <div class="items">
                     <a href="https://www.payless.com/" target="_blank" rel="nofollow">Payless</a>
-                </li>
-                <li class="items">
+                </div>
+                <div class="items">
                     <a href="https://www.pediped.com/" target="_blank" rel="nofollow">pediped</a>
-                </li>
-                <li class="items">
+                </div>
+                <div class="items">
                     <a href="https://www.plae.co/" target="_blank" rel="nofollow">plae</a>
-                </li>
-                <li class="items">
+                </div>
+                <div class="items">
                     <a href="https://seekairun.com/" target="_blank" rel="nofollow">See Kai Run</a>
-                </li>
-                <li class="items">
+                </div>
+                <div class="items">
                     <a href="https://www.sperry.com/en/kids/" target="_blank" rel="nofollow">Sperry</a>
-                </li>
-                <li class="items">
+                </div>
+                <div class="items">
                     <a href="https://www.striderite.com/en/home" target="_blank" rel="nofollow">Stride Rite</a>
-                </li>
-                <li class="items">
+                </div>
+                <div class="items">
                     <a href="https://www.vans.com/kids.html" target="_blank" rel="nofollow">Vans</a>
-                </li> 
+                </div> 
             </div>
         </div>
         <!-- end included brands wrapper -->
-
-        <div class="section section-contact-us text-center">
-            <div class="container" id="contact_us">
-                <form name="contact" method="POST" netlify-honeypot="bot-field" netlify>
-                    <p class="hidden">
-                        <label>Don’t fill this out if you're human:
-                            <input name="bot-field" />
-                        </label>
-                    </p>
-                    <h2 class="title my-text-shadow">-Contact Us-</h2>
-                    <p class="description">We welcome all feedback.</p>
-                    <div class="row">
-                        <div class="col-lg-6 text-center col-md-8 ml-auto mr-auto">
-                            <div class="input-group input-lg">
-                                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-                            </div>
-                            <div class="textarea-container">
-                                <textarea class="form-control" name="message" rows="4" cols="80" placeholder=" Type message here..." required></textarea>
-                            </div>
-                            <div class="send-button">
-                                <button type="submit" class="btn btn-primary btn-round btn-block btn-lg">Send Message</button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
     </div>
 
     <!--   Core JS Files   -->
@@ -232,15 +184,6 @@
     <script src="assets/js/core/popper.min.js" type="text/javascript"></script>
     <script src="assets/js/core/bootstrap.min.js" type="text/javascript"></script>
     <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-    <script src="assets/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118235978-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-118235978-1');
-    </script>
+    <script src="assets/js/now-ui-kit.js" type="text/javascript"></script>
 </body>
 </html>
