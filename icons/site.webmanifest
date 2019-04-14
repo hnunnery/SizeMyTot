@@ -1,0 +1,19 @@
+{
+    "name": "SizeMyTot",
+    "short_name": "SizeMyTot",
+    "icons": [
+        {
+            "src": "/icons/android-chrome-192x192.png?v=yyLerKKex9",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/icons/android-chrome-512x512.png?v=yyLerKKex9",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#610eaf",
+    "background_color": "#610eaf",
+    "display": "standalone"
+}
